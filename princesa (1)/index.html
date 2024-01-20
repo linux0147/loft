@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("job297-ploy-17c-pink-01.jpg");
+        }
+
+        h1 {
+            text-align: center;
+            top: 0;
+            margin-top: 10%;
+            font-size: 700%;
+            color: red;
+            border: 20%;
+        }
+
+        h2 {
+            text-align: center;
+            top: 0;
+            margin-top: 1%;
+            font-size: 300%;
+            color: red;
+            border: 20%;
+        }
+
+        #urso {
+            position: absolute;
+            width: 10%;
+            top: 0;
+            margin-top: 34%;
+            margin-left: 45%;
+        }
+        #musica{
+            position: relative;
+            margin-left: 40%;
+            top: 0px;
+            width: 7%;
+            height: 53px;
+            border-radius: 20px;
+            background-color: red;
+            color: white;
+            border: 0;
+        }
+
+        #musica:hover{
+            background-color: white;
+            color: red;
+        }
+        @media screen and (max-width: 840px) {
+            h1 {
+                top: 0;
+                font-size: 300%;
+                margin-top: 16%;
+            }
+
+            h2 {
+                top: 0;
+                font-size: 250%;
+            }
+
+            #urso {
+                position: absolute;
+                top: 0;
+                margin-top: 120%;
+                width: 25%;
+                margin-left: 33%;
+            }
+            #musica{
+           position: absolute;
+            top: 0px;
+            width: 29%;
+            height: 50px;
+            margin-top: 160%;
+            text-align: center;
+            margin-left: 31%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <img id="urso" src="PinClipart.com_baby-toys-clipart_4064303.png" alt="">
+    <h1>I LOVE YOU</h1>
+    <h2>Só quero agradecer por ser minha razão<br>
+        de esperar o dia seguinte.</h2>
+    <audio id="musica">
+        <source src="Photograph - Ed Sheeran.mp3" type="audio/mp3">
+    </audio>
+    <button id="musica" onclick="startMusic()">Iniciar Música</button>
+    <script>
+        function startMusic() {
+            var x = document.getElementById("musica");
+            x.play();
+        }
+    </script>
+</body>
+</html>
+
